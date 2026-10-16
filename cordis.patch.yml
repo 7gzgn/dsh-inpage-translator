@@ -1,0 +1,4 @@
+# dsh-inpage-translator bundle patch: 把插件行插进 profile 名单。
+- insert:
+    - id: plugin-inpage-translator
+      name: 'dsh-inpage-translator'
