@@ -1,6 +1,6 @@
 {
   "name": "dsh-inpage-translator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Translate the whole page you are looking at: drop a floating button into every browser page the agent opens, click it, and every visible text node is replaced in place (toggle back to the original at any time).",
   "type": "module",
   "main": "lib/index.js",
