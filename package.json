@@ -1,0 +1,78 @@
+{
+  "name": "dsh-inpage-translator",
+  "version": "0.1.0",
+  "description": "Translate the whole page you are looking at: drop a floating button into every browser page the agent opens, click it, and every visible text node is replaced in place (toggle back to the original at any time).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./constants": "./lib/constants.js",
+    "./text-chunks": "./lib/text-chunks.js",
+    "./page-script": "./lib/page-script.js",
+    "./translate": "./lib/translate.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "translate",
+    "translation",
+    "in-page",
+    "page-translation",
+    "browser",
+    "bilingual",
+    "reader",
+    "i18n",
+    "翻译",
+    "网页翻译",
+    "整页翻译"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7gzgn/dsh-inpage-translator.git"
+  },
+  "homepage": "https://github.com/7gzgn/dsh-inpage-translator#readme",
+  "bugs": {
+    "url": "https://github.com/7gzgn/dsh-inpage-translator/issues"
+  },
+  "dsh": {
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.2": "compatible"
+      }
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.4 <5.0.0",
+    "@deepseek-ai/dsh-system-prompt": ">=0.2.0-rc.2 <0.3.0-0",
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-system-prompt": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  }
+}
