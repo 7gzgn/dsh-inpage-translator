@@ -1,6 +1,6 @@
 {
   "name": "dsh-inpage-translator",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Translate the whole page you are looking at: a floating button lives in every browser page the agent opens (auto-injected, survives navigation, remembers where you dragged it), hold it to drag, drop it near an edge and it tucks into a small handle. Click it and every visible text node is replaced in place; click again to see the original. String-level cache and parallel chunks make a second pass almost instant.",
   "type": "module",
   "main": "lib/index.js",
