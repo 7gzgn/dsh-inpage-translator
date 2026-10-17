@@ -130,7 +130,7 @@ translate_page action=sessions       # 只读：列出所有活着的浏览器�
 ## 测试
 
 ```powershell
-node test/smoke.mjs        # 73 项：纯逻辑 / 页面脚本 / 编排层（假 LLM）/ 驱动层（假浏览器与假页面）/ 会话发现与后台巡场
+node test/smoke.mjs        # 74 项：纯逻辑 / 页面脚本 / 编排层（假 LLM）/ 驱动层（假浏览器与假页面）/ 会话发现与后台巡场 / 输出 schema 对齐
 ```
 
 测试**不联网、不碰真实浏览器、不读任何凭据**。
